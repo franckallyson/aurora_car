@@ -7,7 +7,6 @@ from .lubrificacao import Lubrificacao
 from .gps import GPS
 from constantes import CONFIG
 from threading import Thread
-from playsound import playsound
 from assistente_fala import AssistenteFala
 
 class Atuador():
