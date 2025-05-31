@@ -9,4 +9,3 @@ torch
 wave
 nltk
 pygame
-pydub
