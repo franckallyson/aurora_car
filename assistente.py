@@ -9,7 +9,7 @@ from nltk import corpus
 from processamento.processamento_transcricao import *
 from processamento.processamento_fala import *
 from escutador import *
-from playsound import playsound
+
 
 import json
 import os
