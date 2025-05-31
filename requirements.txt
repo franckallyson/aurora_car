@@ -1,0 +1,12 @@
+transformers
+torchaudio
+PySoundFile
+soundfile
+pyaudio
+django
+flask
+torch
+wave
+nltk
+pygame
+pydub

@@ -1,0 +1,2 @@
+from .processamento_fala import ProcessadorFala
+from .processamento_transcricao import ProcessadorTranscricao

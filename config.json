@@ -1,0 +1,58 @@
+{
+    "acoes": [
+        {
+            "nome": "ligar",
+            "objetos": [
+                "carro"
+            ]
+        },
+        {
+            "nome": "desligar",
+            "objetos": [
+                "carro"
+            ]
+        },
+        {
+            "nome": "ativar",
+            "objetos": [
+                "ar"
+            ]
+        },
+        {
+            "nome": "desativar",
+            "objetos": [
+                "ar"
+            ]
+        },
+        {
+            "nome": "verificar",
+            "objetos": [
+                "freios",
+                "freio",
+                "lubrificação"
+            ]
+        },
+        {
+            "nome": "configurar",
+            "objetos": [
+                "rota"
+            ]
+        }         
+    ],
+
+    "cenas": [
+        {
+            "nome": "revisão",
+            "acoes": [
+                {
+                    "nome": "verificar",
+                    "objeto": "freios"
+                },
+                {
+                    "nome": "verificar",
+                    "objeto": "lubrificação"
+                }
+            ]
+        }
+    ]
+}
