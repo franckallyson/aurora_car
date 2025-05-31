@@ -19,27 +19,27 @@ Um projeto de assistente virtual para veículos autônomos, capaz de reconhecer 
 * **Windows:**
 
 ```bash
-python -m venv env
+python3 -m venv env
 env\Scripts\activate
 ```
 
 * **Linux/Mac:**
 
 ```bash
-python -m venv env
+python3 -m venv env
 source env/bin/activate
 ```
 
 2️⃣ Instale as dependências:
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 3️⃣ Baixe os recursos necessários (modelos ou dados):
 
 ```bash
-python download.py
+python3 download.py
 ```
 
 4️⃣ Configure os caminhos no arquivo `constantes.py`:
@@ -63,7 +63,7 @@ CONFIG = 'caminho/para/config.json'
 Execute todos os testes unitários com:
 
 ```bash
-python -m unittest discover -s tests
+python3 -m unittest discover -s tests
 ```
 
 ---
@@ -73,7 +73,7 @@ python -m unittest discover -s tests
 Para iniciar o assistente, execute:
 
 ```bash
-python assistente.py
+python3 assistente.py
 ```
 
 * Por padrão, a **interface web estará ativada**.
