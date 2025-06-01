@@ -17,41 +17,8 @@ import pyaudio
 import queue
 import time
 
-"""def iniciar(dispositivo):
 
-    iniciado, processador, modelo = iniciar_modelo(MODELO, dispositivo)
-    palavras_de_parada = set(corpus.stopwords.words(IDIOMA_CORPUS))
-
-    return iniciado, processador, modelo, palavras_de_parada
-"""
-
-# dois modos de funcionamento:
-# 1. por linha de comando
-def ativar_linha_de_comando():
-    dispositivo = "cuda:0" if torch.cuda.is_available() else "cpu"
-
-    #iniciado, processador, modelo, palavras_de_parada = iniciar(dispositivo)
-    processador_transcricao = ProcessadorTranscricao()
-    if processador_transcricao.iniciado:
-        atuador = Atuador()
-        
-        processador_fala = ProcessadorFala()
-        fala = processador_fala.capturar_fala()
-        gravado, arquivo_fala = processador_fala.gravar_fala(fala)
-        
-        if gravado:
-            
-            transcricao = processador_transcricao.transcrever_fala(processador_fala.carregar_fala(arquivo_fala), dispositivo)
-
-            os.remove(arquivo_fala)
-
-            comando = processador_transcricao.processar_transcricao(transcricao)
-            print(f"comando de voz: {comando}")
-            
-            atuador.validar_comando(comando)
-            atuador.atuar()
-            
-            
+# linha de comando
 def ativar_assistente():
     fila_ativacao = queue.Queue()
 
@@ -155,11 +122,10 @@ def ativar_interface_web():
     servico.config["dispositivo"] = "cuda:0" if torch.cuda.is_available() else "cpu"
     servico.run(host="0.0.0.0", debug=True)
 
-ATIVAR_INTERFACE_WEB = True
+ATIVAR_INTERFACE_WEB = False
 
 if __name__ == "__main__":
     if ATIVAR_INTERFACE_WEB:
         ativar_interface_web()
-        pass
     else:
         ativar_assistente()

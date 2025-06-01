@@ -55,14 +55,3 @@ class ProcessadorFala():
             print(f"ocorreu um erro gravando fala: {str(e)}")
 
         return gravada, arquivo
-
-"""
-def processar_transcricao(transcricao, palavras_de_parada):
-    comando = []
-
-    tokens = word_tokenize(transcricao)
-    for token in tokens:
-        if token not in palavras_de_parada:
-            comando.append(token)
-
-    return comando"""

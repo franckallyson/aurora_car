@@ -4,6 +4,28 @@
 Um projeto de assistente virtual para veículos autônomos, capaz de reconhecer comandos de voz e executar tarefas. O assistente pode ser executado tanto via terminal quanto através de uma interface web.
 
 ---
+## Descrição do Projeto - Assistente de Comandos por Voz
+
+O assistente deve ser capaz de **auxiliar o usuário, através da voz**, na realização de comandos para **controlar atuadores**. 
+
+### Comandos Disponíveis
+
+1. **Ligar e desligar o carro**  
+   ➝ O assistente recebe o comando de voz para ligar ou desligar o veículo. (Apenas Audio ilustrativo)
+
+2. **Ativar e desativar o ar condicionado**  
+   ➝ Permite que o usuário controle o ar condicionado do carro via comando de voz. (Apenas Audio ilustrativo)
+
+3. **Verificar freios**  
+   ➝ O assistente realiza uma checagem do sistema de freios. (Apenas Audio ilustrativo)
+
+4. **Verificar lubrificação**  
+   ➝ Faz a verificação do nível e estado da lubrificação do veículo. (Apenas Audio ilustrativo)
+
+5. **Configurar rota para [Cidades Aleatórias]**  
+   ➝ O assistente define uma rota para o destino informado pelo usuário, utilizando o comando de voz para selecionar a cidade desejada. (Apenas Audio ilustrativo)
+
+---
 
 ## ✅ Pré-requisitos
 
